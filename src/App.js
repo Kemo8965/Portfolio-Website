@@ -12,6 +12,7 @@ import HashLoader from "react-spinners/HashLoader";
 import CaseStudies from './components/CaseStudies';
 import amakaLodge from './components/case-studies/amakaLodge';
 import mungiCompany from './components/case-studies/mungiCompany';
+import Sidebar from './components/Sidebar';
 
 const override = css`
   display: block;
@@ -36,7 +37,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-       <Navbar/>
+       <Sidebar/>
       {
         loading ?
 
@@ -65,9 +66,9 @@ function App() {
     <ScrollToTop  style={{position: 'fixed',
                            bottom: 60,
                           right: 40,
-                        
+                           
                            cursor: 'pointer',
-                          transitionDuration: '0.6s',
+                          transitionDuration: '1.6s',
                            transitionTimingFunction: 'linear',
                           transitionDelay: '.5s'}} showUnder={165}>
            <span >

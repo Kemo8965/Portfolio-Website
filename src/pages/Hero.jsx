@@ -10,13 +10,24 @@ import Footer from '../components/Footer'
 import { css, cx } from '@emotion/react'
 import CTA from '../components/CTA';
 import Gallery from '../components/Gallery';
-
+import Scroller from '../components/Scroller'
+import Lottie from 'react-lottie';
+import animationData from '../components/lotties/mobile-payment.json';
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
   { name: 'Marketplace', href: '#' },
   { name: 'Company', href: '#' },
 ]
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+  preserveAspectRatio: "xMidYMid slice"
+  }
+};
 
 const override = css`
   display: block;
@@ -27,6 +38,8 @@ const override = css`
 `;
 
 export default function Example() {
+ 
+
   const [loading, setLoading] = useState(false);
 
   useEffect(()=>{
@@ -42,47 +55,84 @@ export default function Example() {
     <div>
        
 
-      <div className=" lg:h-100 h-72  w-full "  style={{ background: "url('../assets/images/hero12.jpg')  no-repeat center / cover "}}>
+      
+      <div className=" xl:h-100 h-full  w-full lg:bg-white text-gray-900" >
+       
+                        
+   
     <Popover className="relative  overflow-hidden ">
       {({ open }) => (
         <>
+
         
-          <div className="max-w-7xl mx-auto ">
-            <div className="relative z-10 pb-4  sm:pb-16 md:pb-20 lg:max-w-lg lg:w-full lg:pb-28 xl:pb-32">
-            
-            
+        
+          <div className="max-w-6xl mx-auto ">
+            <div className="relative  pb-4  sm:pb-16 md:pb-20 lg:max-w-lg lg:w-full lg:pb-28 xl:pb-32">
+          
+            <div className="grid xl:grid-cols-2 grid-cols-1">
+              
+              <div>
+              <main className="py-2  lg:mt-2 mt-6 lg:mt-2 rounded-md px-4 bg-none">
                 
-              <main className="py-10 lg:mt-2 mt-60 lg:mt-20 rounded-md px-8 bg-none">
                 <div className="sm:text-left text-left">
-                  <h1 className="text-2xl lg:text-3xl  font-bold text-gray-900 sm:text-xl md:text-2xl pb-4 mt-4 lg:pb-10">
-                    <span className="filter sepia-10 block xl:inline lg:text-gray-600  text-gray-600">Kondwani Mwale</span>
+                  <h1 className="text-2xl lg:text-2xl  font-bold lg:text-gray-900 sm:text-xl md:text-2xl pb-4 mt-4 lg:pb-4">
+                    <span className="filter sepia-10 lg:text-gray-600 ">Kondwani Mwale</span>
 
                   </h1>
 
-                  <h3 className="text-2xl  font-bold text-gray-900 sm:text-2xl lg:text-4xl">
-                    <span className="block  xl:inline">Expressing </span>{' '}
-                    <span className="block xl:inline">Company Identity through</span>
-                  </h3>
+                  <p className="text-6xl  mx-auto  font-serif lg:text-gray-900 sm:text-2xl lg:text-7xl">
+                    <span className="text-red-600 ">Expressing   </span>
+                   
+                    <span className="text-blue-900"> Company Identity through </span>
+                   
+                  </p>
 
-                  <p className="mt-3 text-base font-semibold  text-gray-800 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl lg:mx-0">
+                  <p className="mt-8 text-base font-semibold   text-gray-600 sm:mt-5 text-2xl sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl lg:mx-0">
                 UX/UI Design , Branding, Motion Design
                   </p>
-                  <div className="mt-4  sm:mt-8 sm:inline-flex sm:justify-center lg:justify-start">
+                  <div className="mt-12 lg:ml-0 ml-28   sm:mt-8 sm:inline-flex sm:justify-center lg:justify-start">
                     
                       <a
-                        href="/Contact"
+                        href="#"
                         
-                        className="lg:w-full w-3/4 flex bg-gray-800 items-center justify-center  py-3 border border-transparent text-base font-medium rounded-md text-white hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                       className="lg:w-1/2 lg:h-full h-10 w-1/2  flex bg-none items-center justify-center  py-8 border border-transparent text-base font-medium rounded-md text-white  md:py-4 md:text-lg md:px-10"
                       >
-                        Get in touch
-                      </a>     
+                        <Scroller/>
+                        
+                      </a>  
+                      
+                         
                   </div>
+
+
+                 
                  
 
                     
                 </div>
+              <div>
+                
+              </div>
+                
               </main>
+
+              </div>
+
+              <div className="lg:ml-20 lg:h-80 h-auto">
+              <Lottie 
+                          options={defaultOptions}
+                          height={600}
+                          width={800}
+                          />
+              </div>
+
             </div>
+                
+              
+              
+            </div>
+
+            
           </div>
           <CaseStudies/>
           <CTA/>

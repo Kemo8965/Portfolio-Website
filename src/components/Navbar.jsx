@@ -26,7 +26,7 @@ const Navbar = () => {
               </div>
               <div
                 className={
-                  "lg:flex flex-grow items-center" +
+                  "lg:flex flex-grow bg-gray-50 h-100 px-4 w-full items-center" +
                   (navbarOpen ? " flex" : " hidden")
                 }
                 id="example-navbar-danger"

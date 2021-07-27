@@ -3,7 +3,7 @@ import React from 'react'
 const CaseStudies = () => {
     return (
         <div>
-            <div className="pb-8 ">
+            <div id="case" className="pb-8 ">
             <h3 className="lg:pt-20  pt-4 text-2xl lg:tracking-wider text-gray-500 font-bold text-left lg:ml-16 ml-8">
                 Selected Projects
             </h3>
