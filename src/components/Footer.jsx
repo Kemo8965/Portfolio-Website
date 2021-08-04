@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            <div className=" lg:h-100 h-full bg-gray-50 filter hue-rotate-15 w-full  " style={{ background: "url('../assets/images/hero4.jpg') no-repeat center / cover "}}>
+            <div className=" lg:h-100 h-full bg-gray-50 filter hue-rotate-15 w-full  " style={{ background: "url('../assets/images/hero4.jpg') fixed no-repeat center / cover "}}>
                <div className="grid lg:grid-cols-4 grid-cols-1 my-2 text-2xl font-bold lg:pt-16 pt-10 text-black">
                    <div className="lg:py-0 py-8">
                       <h1 className="lg:ml-14 mr-20 lg:text-left">Contact Information</h1>

@@ -1,6 +1,8 @@
 import React, {useState,useEffect, Fragment} from 'react'
 import { css, cx } from '@emotion/react'
 import HashLoader from "react-spinners/HashLoader";
+import { Parallax } from 'react-parallax';
+
 
 const override = css`
   display: block;
@@ -10,6 +12,7 @@ const override = css`
   border-color: red;
 `;
 
+const img1=`${process.env.PUBLIC_URL + '/assets/images/cta.jpg'}`
 
 const Contact = () => {
     const [loading, setLoading] = useState(false);
@@ -24,25 +27,16 @@ const Contact = () => {
   },[])
 
     return (
-        <div className="bg-red-100">
-            {
-        loading ?
 
+      
+           
+            <Parallax className="lg:object-cover h-60 object-contain  lg:w-full lg:h-200 lg:pb-8" bgImage={img1} >
+                 
+            </Parallax>
         
-        <HashLoader
        
-        color={"#000000"}  
-        loading={loading}
-        css={override}  
-        size={40} />
-        :
+       
         
-        <div className="font-bold text-4xl text-black tracking-wider">
-            <h1>Contact Me!</h1>
-        </div>
-       
-      } 
-        </div>
     )
 }
 

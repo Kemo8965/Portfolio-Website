@@ -13,6 +13,8 @@ import Gallery from '../components/Gallery';
 import Scroller from '../components/Scroller'
 import Lottie from 'react-lottie';
 import animationData from '../components/lotties/mobile-payment.json';
+import { Parallax } from 'react-parallax';
+
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
@@ -37,6 +39,8 @@ const override = css`
   border-color: red;
 `;
 
+const img1=`${process.env.PUBLIC_URL + '/assets/images/guy2.jpg'}`
+
 export default function Example() {
  
 
@@ -56,94 +60,40 @@ export default function Example() {
        
 
       
-      <div className=" xl:h-100 h-full  w-full lg:bg-white text-gray-900" >
+      <div className=" lg:h-100 h-full lg:w-full w-full lg:bg-white text-gray-900 lg:mb-12 text-left" >
        
-                        
-   
-    <Popover className="relative  overflow-hidden ">
-      {({ open }) => (
-        <>
-
-        
-        
-          <div className="max-w-6xl mx-auto ">
-            <div className="relative  pb-4  sm:pb-16 md:pb-20 lg:max-w-lg lg:w-full lg:pb-28 xl:pb-32">
-          
-            <div className="grid xl:grid-cols-2 grid-cols-1">
-              
-              <div>
-              <main className="py-2  lg:mt-2 mt-6 lg:mt-2 rounded-md px-4 bg-none">
+                                
+            
+          <div className="grid lg:grid-cols-2 grid-cols-1 ">
                 
-                <div className="sm:text-left text-left">
-                  <h1 className="text-2xl lg:text-2xl  font-bold lg:text-gray-900 sm:text-xl md:text-2xl pb-4 mt-4 lg:pb-4">
-                    <span className="filter sepia-10 lg:text-gray-600 ">Kondwani Mwale</span>
 
+                <div className="lg:pt-8 lg:mt-10 lg:text-6xl bg-white text-2xl font-bold  ">
+                  <h1 className="lg:text-7xl text-3xl py-8 text-gray-700 mx-8 mb-4 font-serif">
+                  Expressing Company Identity through
                   </h1>
 
-                  <p className="text-6xl  mx-auto  font-serif lg:text-gray-900 sm:text-2xl lg:text-7xl">
-                    <span className="text-red-600 ">Expressing   </span>
-                   
-                    <span className="text-blue-900"> Company Identity through </span>
-                   
-                  </p>
+                  <h2  className="lg:text-4xl text-xl text-gray-500 mx-8">UI/UX Design, Branding and Motion Graphic Design</h2>
 
-                  <p className="mt-8 text-base font-semibold   text-gray-600 sm:mt-5 text-2xl sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl lg:mx-0">
-                UX/UI Design , Branding, Motion Design
-                  </p>
-                  <div className="mt-12 lg:ml-0 ml-28   sm:mt-8 sm:inline-flex sm:justify-center lg:justify-start">
-                    
-                      <a
-                        href="#"
-                        
-                       className="lg:w-1/2 lg:h-full h-10 w-1/2  flex bg-none items-center justify-center  py-8 border border-transparent text-base font-medium rounded-md text-white  md:py-4 md:text-lg md:px-10"
-                      >
-                        <Scroller/>
-                        
-                      </a>  
-                      
-                         
-                  </div>
-
-
-                 
-                 
-
-                    
+                  <Scroller/>
                 </div>
+
               <div>
-                
-              </div>
-                
-              </main>
+                <Parallax className="lg:object-cover mt-10 h-72 object-cover my-5  lg:w-full lg:h-100 lg:pb-4" bgImage={img1} >
+                    <h1 className="lg:pt-96 mx-8 lg:mr-60 pt-52 text-5xl text-white font-bold">
+                     I'm Kondwani
+                    </h1>
+              </Parallax>
+                </div>
 
-              </div>
-
-              <div className="lg:ml-20 lg:h-80 h-auto">
-              <Lottie 
-                          options={defaultOptions}
-                          height={600}
-                          width={800}
-                          />
-              </div>
-
-            </div>
-                
-              
-              
-            </div>
-
+       </div>
             
-          </div>
-          <CaseStudies/>
-          <CTA/>
-          <Footer/>
-          
-        </>
-      )}
-    </Popover>
+        
+        
     </div>
 
-      
+         <CaseStudies/>
+          <CTA/>
+          <Footer/>
 
 
     
