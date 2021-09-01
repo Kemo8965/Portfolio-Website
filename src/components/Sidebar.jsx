@@ -23,7 +23,7 @@ const Sidebar = () => {
                     <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                       <div className="flex items-center justify-between w-full md:w-auto">
                          <a href="/">
-                        <img className="w-20 h-20 lg:ml-20 mr-4  object-cover rounded-full border border-gray-400" src={process.env.PUBLIC_URL + '/assets/images/k-logo.png'} alt="logo"/>
+                        <img className="w-20 h-20 lg:ml-14 mr-4  object-cover rounded-full border border-gray-400" src={process.env.PUBLIC_URL + '/assets/images/k-logo.png'} alt="logo"/>
                         </a>
                     
                         <div className="-mr-2 flex items-center md:hidden">

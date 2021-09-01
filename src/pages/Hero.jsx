@@ -14,6 +14,7 @@ import Scroller from '../components/Scroller'
 import Lottie from 'react-lottie';
 import animationData from '../components/lotties/mobile-payment.json';
 import { Parallax } from 'react-parallax';
+import { ReactVideo } from "reactjs-media"
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -64,21 +65,15 @@ export default function Example() {
        
                                 
             
-          <div className="grid lg:grid-cols-2 grid-cols-1 ">
-                
+          <div className="grid lg:grid-cols-2 grid-cols-1 ">    
 
-                <div className="lg:pt-8 lg:mt-10 lg:text-6xl bg-white text-2xl font-bold  ">
-                  <h1 className="lg:text-7xl text-3xl py-8 text-gray-700 mx-8 mb-4 font-serif">
-                  Expressing Company Identity through
-                  </h1>
-
-                  <h2  className="lg:text-4xl text-xl text-gray-500 mx-8">UI/UX Design, Branding and Motion Graphic Design</h2>
-
-                  <Scroller/>
-                </div>
+          <div >
+          <img className="lg:h-99 lg:mr-8 " src="../assets/images/port2.png" alt="" />
+          <Scroller/>
+          </div>         
 
               <div>
-                <Parallax className="lg:object-cover mt-10 h-72 object-cover my-5  lg:w-full lg:h-100 lg:pb-4" bgImage={img1} >
+                <Parallax className="lg:order-2 order-first lg:object-cover mt-10 h-72 object-cover my-5  lg:w-full lg:h-100 lg:pb-4" bgImage={img1} >
                     <h1 className="lg:pt-96 mx-8 lg:mr-60 pt-52 text-5xl text-white font-bold">
                      I'm Kondwani
                     </h1>

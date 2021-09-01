@@ -20,7 +20,7 @@ const CaseStudies = () => {
               
               
                <div class="flex flex-wrap lg:h-100 h-full py-28 rounded-lg  bg-gray-100 sm:py-24 lg:py-16 pb-20 mb-20 lg:px-4 lg:mx-2 font-bold  text-3xl relative">
-                            <img alt="gallery" className="w-full object-cover rounded-lg lg:h-100 h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/hero4.jpg" />
+                            <img alt="gallery" className="w-full object-cover rounded-lg lg:h-100 h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/MUNGI-LOGO.jpg" />
                             <div class="text-left ml-4 pt-24 lg:h-100 h-full relative z-10 w-full">
                                 <a href="/mungiCompany" >
                             <h1 class=" text-3xl text-gray-100 font-bold title-font mb-4 ">Responsive Website Design</h1>
