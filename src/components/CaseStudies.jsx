@@ -36,11 +36,11 @@ const CaseStudies = () => {
                 </div>
 
                 <div class="flex flex-wrap lg:h-100 rounded-lg h-full py-28 bg-gray-100 sm:py-24 lg:py-16 pb-20 lg:mt-0 mt-10 mb-20 lg:px-4 lg:mx-2 font-bold  text-3xl relative">
-                            <img alt="gallery" class="w-full object-cover lg:h-100 rounded-lg h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/lodge.jpg" />
+                            <img alt="gallery" class="w-full object-cover lg:h-100 rounded-lg h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/webs.jpg" />
                             <div class="text-left ml-4 pt-24 lg:h-100 h-full relative z-10 w-full">
                                 <a href="/amakaLodge">
                             <h1 class="text-3xl text-gray-100 font-bold title-font mb-4">Website Design</h1>
-                            <p class="leading-relaxed text-gray-200">Amaka Lodge</p>
+                            <p class="leading-relaxed text-gray-200">WEBS Electrical Engineering Limited</p>
                             <a class="mt-3 text-indigo-100 inline-flex items-center hover:text-blue-300">Learn More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>

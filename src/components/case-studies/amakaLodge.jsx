@@ -4,19 +4,19 @@ const amakaLodge = () => {
     return (
         <div>
 
-            <div className="text-sm mb-3 text-left ml-8 font-semibold tracking-widest">
+            <div className="text-sm mt-10 mb-3 text-left ml-8 font-semibold tracking-widest">
                <h1>CASE STUDY</h1>
             </div>
             <div className="grid h-100 lg:grid-cols-2 grid-cols-1">
            
            
                    
-           <div class="flex flex-wrap lg:h-100 h-full py-20  bg-gray-100 sm:py-24 lg:py-16 pb-20 mb-20 lg:px-8 lg:ml-8 font-bold  text-3xl relative">
-                        <img alt="gallery" className="w-full object-cover lg:h-100 h-full object-center block filter grayscale brightness-50 absolute inset-0 " src="../assets/images/lodge2.jpg" />
+           <div class="flex flex-wrap lg:h-100 h-full mt-5  bg-gray-100 sm:py-24 lg:py-16 pb-20 mb-20 lg:px-8 lg:ml-8 font-bold  text-3xl relative">
+                        <img alt="gallery" className="w-full object-cover lg:h-100 h-full object-center block filter  brightness-50 absolute inset-0 " src="../assets/images/webs.jpg" />
                         <div class="text-left ml-4 pt-10 lg:h-100 h-full relative  w-full">
                             <a href="/mungiCompany" >
                                 <p className="text-gray-300 text-xl tracking-wide">Client</p>
-                        <h1 class=" text-2xl text-gray-100 font-bold title-font mb-4 ">Amaka Lodge Limited </h1>
+                        <h1 class=" text-2xl text-gray-100 font-bold title-font mb-4 ">WEBS Electrical Engineering Limited </h1>
                         <h2 className="text-gray-300 text-xl tracking-wide">My Role</h2>
                         <ol className="text-lg text-white">
                             <li>Creative Direction</li>
