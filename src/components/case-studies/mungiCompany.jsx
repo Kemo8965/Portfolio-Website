@@ -15,7 +15,7 @@ const mungiCompany = () => {
                <div class="flex flex-wrap lg:h-100 h-full py-20  bg-gray-100 sm:py-24 lg:py-16 pb-20 mb-20 lg:px-8 lg:ml-8 font-bold  text-3xl relative">
                             <img alt="gallery" className="w-full object-cover lg:h-100 h-full object-center block filter grayscale brightness-50 absolute inset-0 " src="../assets/images/lion.jpg" />
                             <div class="text-left ml-4 pt-10 lg:h-100 h-full relative  w-full">
-                                <a href="/mungiCompany" >
+                                <a href="#" >
                                     <p className="text-gray-300 text-xl tracking-wide">Client</p>
                             <h1 class=" text-2xl text-gray-100 font-bold title-font mb-4 ">Mungi Company Limited </h1>
                             <h2 className="text-gray-300 text-xl tracking-wide">My Role</h2>
@@ -28,7 +28,7 @@ const mungiCompany = () => {
                                 <li>SSL Certificate setup</li>
                                 <li>Custom Email setup</li>
                             </ol>
-                             <a class="mt-3 text-indigo-100 inline-flex text-lg items-center hover:text-blue-300">View Website
+                             <a href='https://mungicompany.com' class="mt-3 text-indigo-100 inline-flex text-lg items-center hover:text-blue-300">View Website
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>

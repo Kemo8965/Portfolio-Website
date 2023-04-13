@@ -4,16 +4,21 @@ import React, {useState,useEffect, Fragment} from 'react'
 import Hero from './pages/Hero'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Rates from './components/Rates'
 import Navbar from './components/Navbar'
 import ScrollToTop from 'react-scroll-up'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { css, cx } from '@emotion/react'
-import HashLoader from "react-spinners/HashLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 import CaseStudies from './components/CaseStudies';
-import amakaLodge from './components/case-studies/amakaLodge';
+import ChacorneEnterprises from './components/case-studies/ChacorneEnterprises';
 import mungiCompany from './components/case-studies/mungiCompany';
+import Piranha from './components/case-studies/piranhaSystems';
 import Sidebar from './components/Sidebar';
-
+import Footer from './components/Footer';
+import WhatsAppWidget from './components/WhatsAppWidget';
+import "react-whatsapp-chat-widget/index.css";
+import WhatsApp2 from './components/WhatsAppWidget2';
 const override = css`
   display: block;
   margin: 0 auto;
@@ -30,7 +35,7 @@ function App() {
     
     setTimeout(()=>{
     setLoading(false)
-    }, 2500)
+    }, 3500)
 
   },[])
   
@@ -42,27 +47,33 @@ function App() {
         loading ?
 
         
-        <HashLoader
+        <PropagateLoader
        
         color={"#000000"}  
         loading={loading}
         css={override}  
-        size={50} />
+        size={40} />
         :
         
         <Switch>
         <Route path="/" exact component={Hero}/>
         <Route path="/about" exact component={About}/>
         <Route path="/contact" exact component={Contact}/>
-        <Route path="/amakaLodge" exact component={amakaLodge}/>
+        <Route path="/ChacorneEnterprises" exact component={ChacorneEnterprises}/>
+        <Route path="/piranha" exact component={Piranha}/>
         <Route path="/mungiCompany" exact component={mungiCompany}/>
+        <Route path="/rates" exact component={Rates}/>
         </Switch>
        
+      
       }
      
-      
+     
       
     </div>
+
+   
+  
     <ScrollToTop  style={{position: 'fixed',
                            bottom: 60,
                           right: 40,

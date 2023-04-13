@@ -1,7 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
-
-
+import Scroller2 from '../components/Scroller2'
+import Rates from '../components/Rates'
 const img1=`${process.env.PUBLIC_URL + '/assets/images/hero10.jpg'}`
 const CaseStudies = () => { 
     return (
@@ -23,40 +23,43 @@ const CaseStudies = () => {
                             <img alt="gallery" className="w-full object-cover rounded-lg lg:h-100 h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/MUNGI-LOGO.jpg" />
                             <div class="text-left ml-4 pt-24 lg:h-100 h-full relative z-10 w-full">
                                 <a href="/mungiCompany" >
-                            <h1 class=" text-3xl text-gray-100 font-bold title-font mb-4 ">Responsive Website Design</h1>
+                            <h1 class=" text-3xl text-gray-100 font-bold title-font mb-4 ">Website Design</h1>
                             <p class="leading-relaxed text-gray-200">Mungi Company Limited.</p>
-                            <a class="mt-3 text-indigo-100 inline-flex items-center hover:text-blue-300">Learn More
+                            <a class="mt-3 lg:mt-12 text-indigo-100 inline-flex items-center hover:text-blue-300">Learn More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </a>
 
                             </a>
+                           
                             </div>
                 </div>
 
                 <div class="flex flex-wrap lg:h-100 rounded-lg h-full py-28 bg-gray-100 sm:py-24 lg:py-16 pb-20 lg:mt-0 mt-10 mb-20 lg:px-4 lg:mx-2 font-bold  text-3xl relative">
-                            <img alt="gallery" class="w-full object-cover lg:h-100 rounded-lg h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/lodge.jpg" />
+                            <img alt="gallery" class="w-full object-cover lg:h-100 rounded-lg h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/CE2.png" />
                             <div class="text-left ml-4 pt-24 lg:h-100 h-full relative z-10 w-full">
-                                <a href="/amakaLodge">
+                                <a href="/ChacorneEnterprises">
                             <h1 class="text-3xl text-gray-100 font-bold title-font mb-4">Website Design</h1>
-                            <p class="leading-relaxed text-gray-200">Amaka Lodge</p>
-                            <a class="mt-3 text-indigo-100 inline-flex items-center hover:text-blue-300">Learn More
+                            <p class="leading-relaxed text-gray-200">Chacorne Enterprises</p>
+                            <a class="mt-3 lg:mt-24 text-indigo-100 inline-flex items-center hover:text-blue-300">Learn More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </a>
                             </a>
+                           
                             </div>
+                            
                 </div>
 
                 <div class="flex flex-wrap lg:h-100 rounded-lg h-full py-28 bg-gray-100 sm:py-24 lg:py-16 pb-20 lg:mt-0 mt-20 mb-10 lg:px-4 lg:mx-2 font-bold  text-3xl relative">
-                            <img alt="gallery" class="w-full object-cover lg:h-100 rounded-lg h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/hero10.jpg" />
+                            <img alt="gallery" class="w-full object-cover lg:h-100 rounded-lg h-full object-center block filter brightness-50 absolute inset-0 " src="../assets/images/piranha.png" />
                             <div class="text-left ml-4 pt-24 lg:h-100 h-full relative z-10 w-full">
-                                <a href="/amakaLodge">
-                            <h1 class="text-3xl text-gray-100 font-bold title-font mb-4">Client Management System</h1>
-                            <p class="leading-relaxed text-gray-200">Summit Insurance</p>
-                            <a class="mt-3 text-indigo-100 inline-flex items-center hover:text-blue-300">Learn More
+                                <a href="/piranha">
+                            <h1 class="text-3xl text-gray-100 font-bold title-font mb-4">Large Enterprise Software Application</h1>
+                            <p class="leading-relaxed text-gray-200">Piranha Systems</p>
+                            <a class="mt-3 lg:mt-14 text-indigo-100 inline-flex items-center hover:text-blue-300">Learn More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
@@ -64,10 +67,10 @@ const CaseStudies = () => {
                             </a>
                             </div>
                 </div>
-            
+              
                </div> 
 
-
+              
         </Parallax>
     )
 }

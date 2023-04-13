@@ -6,15 +6,17 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import CaseStudies from '../components/CaseStudies'
-import Footer from '../components/Footer'
+
 import { css, cx } from '@emotion/react'
 import CTA from '../components/CTA';
 import Gallery from '../components/Gallery';
 import Scroller from '../components/Scroller'
+import Rates from '../components/Rates'
 import Lottie from 'react-lottie';
 import animationData from '../components/lotties/mobile-payment.json';
 import { Parallax } from 'react-parallax';
 import { ReactVideo } from "reactjs-media"
+import Footer from '../components/Footer';
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -40,7 +42,7 @@ const override = css`
   border-color: red;
 `;
 
-const img1=`${process.env.PUBLIC_URL + '/assets/images/guy2.jpg'}`
+const img1=`${process.env.PUBLIC_URL + '/assets/images/kdm2.jpg'}`
 
 export default function Example() {
  
@@ -74,7 +76,7 @@ export default function Example() {
 
               <div>
                 <Parallax className="lg:order-2 order-first lg:object-cover mt-10 h-72 object-cover my-5  lg:w-full lg:h-100 lg:pb-4" bgImage={img1} >
-                    <h1 className="lg:pt-96 mx-8 lg:mr-60 pt-52 text-5xl text-white font-bold">
+                    <h1 className="lg:pt-96 mx-8 lg:mr-60 pt-44 sm:hidden text-5xl text-white font-bold">
                      I'm Kondwani
                     </h1>
               </Parallax>
@@ -87,9 +89,10 @@ export default function Example() {
     </div>
 
          <CaseStudies/>
+         
           <CTA/>
-          <Footer/>
-
+          
+        <Footer/>
 
     
    
